@@ -20,11 +20,6 @@ export default function decorate(block) {
   });
   // Step 2: Apply config to the block
   // You can handle these however you want — here are some examples:
-  Object.entries(config).forEach(([key, value]) => {
-    console.log(key);
-    console.log(value);
-  });
-
   if (config.bgcolor) {
     block.style.backgroundColor = config.bgcolor;
   }
