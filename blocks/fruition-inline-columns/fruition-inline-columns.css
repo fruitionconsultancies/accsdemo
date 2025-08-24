@@ -1,0 +1,32 @@
+.fruition-inline-columns > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.fruition-inline-columns img {
+  width: 100%;
+}
+
+.fruition-inline-columns > div > div {
+  order: 1;
+}
+
+.fruition-inline-columns > div > .fruition-inline-columns-img-col {
+  order: 0;
+}
+
+.fruition-inline-columns > div > .fruition-inline-columns-img-col img {
+  display: block;
+}
+
+@media (min-width: 900px) {
+  .fruition-inline-columns > div {
+    align-items: center;
+    flex-direction: unset;
+    gap: 24px;
+  }
+
+  .fruition-inline-columns > div > div {
+    order: unset;
+  }
+}

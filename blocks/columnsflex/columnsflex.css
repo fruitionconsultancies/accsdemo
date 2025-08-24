@@ -1,0 +1,33 @@
+.columnsflex > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.columnsflex img {
+  width: auto;//fruition-modify
+}
+
+.columnsflex > div > div {
+  order: 1;
+}
+
+.columnsflex > div > .columnsflex-img-col {
+  order: 0;
+}
+
+.columnsflex > div > .columnsflex-img-col img {
+  //display: block; //fruition-modify
+}
+
+@media (min-width: 900px) {
+  .columnsflex > div {
+    align-items: center;
+    flex-direction: unset;
+    gap: 200px; //fruition-modify
+  }
+
+  .columnsflex > div > div {
+    flex: 1;
+    order: unset;
+  }
+}
