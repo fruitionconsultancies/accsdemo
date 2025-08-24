@@ -1,7 +1,7 @@
 export default function decorate(block) {
   const config = {};
   const contentRows = [];
-  const knownConfigKeys = ['bgcolor', 'textalign', 'padding', 'color', 'class','borderradius'];
+  const knownConfigKeys = ['bgcolor', 'textalign', 'padding', 'color', 'class', 'borderradius'];
 
   // Step 1: Extract configuration rows (key-value pairs)
   [...block.children].forEach((row) => {
