@@ -4,7 +4,7 @@
 }
 
 .columnsflex img {
-  width: auto;//fruition-modify
+  width: auto;
 }
 
 .columnsflex > div > div {
@@ -15,15 +15,11 @@
   order: 0;
 }
 
-.columnsflex > div > .columnsflex-img-col img {
-  //display: block; //fruition-modify
-}
-
 @media (min-width: 900px) {
   .columnsflex > div {
     align-items: center;
     flex-direction: unset;
-    gap: 200px; //fruition-modify
+    gap: 200px;
   }
 
   .columnsflex > div > div {
