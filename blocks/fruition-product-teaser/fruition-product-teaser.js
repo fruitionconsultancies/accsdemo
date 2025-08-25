@@ -1,6 +1,10 @@
 import { readBlockConfig } from '../../scripts/aem.js';
-import { performCatalogServiceQuery, renderPrice, mapProductAcdl, rootLink } from '../../scripts/commerce.js';
-
+import {
+    performCatalogServiceQuery,
+    renderPrice,
+    mapProductAcdl,
+    rootLink,
+} from '../../scripts/commerce.js';
 
 const productTeaserQuery = `query productTeaser($sku: String!) {
   products(skus: [$sku]) {
@@ -123,8 +127,8 @@ function renderProduct(product, config, block) {
   const imageContainer = fragment.querySelector('.image');
   const hasValidImage = Array.isArray(product.images) && product.images.length > 0;
   const imageToRender = hasValidImage
-  ? renderImage(product.images[0], 250)
-  : renderImage({
+    ? renderImage(product.images[0], 250)
+    : renderImage({
       url: '/icons/default.png',
       label: product.name || 'Default Product',
     }, 250);
