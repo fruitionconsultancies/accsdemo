@@ -74,11 +74,11 @@
     letter-spacing: var(--type-headline-2-strong-letter-spacing);
 }
 
-@media (width >= 600px) {
+@media (min-width: 600px) {
     .fruition-product-teaser {
         flex-direction: row;
         width: 50%;
-        border: #000000 solid;
+        border: #000 solid;
         margin:20px
     }
 
