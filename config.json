@@ -38,14 +38,4 @@
       }
     }
   }
-  "access": {
-    "admin": {
-      "role": {
-        "config_admin": [
-          "rajat@fruitionconsultancies.com"
-        ]
-      },
-      "requireAuth": "auto"
-    }
-  }
 }
