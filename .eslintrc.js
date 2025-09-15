@@ -25,7 +25,7 @@ module.exports = {
       },
     ],
     'no-unused-vars': ['error', { argsIgnorePattern: '^_', varsIgnorePattern: '^_' }],
-    'no-underscore-dangle': 'off', 
+    'no-underscore-dangle': 'off',
   },
   overrides: [
     {
