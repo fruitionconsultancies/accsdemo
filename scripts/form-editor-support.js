@@ -153,6 +153,7 @@ function annotateItems(items, formDefinition, formFieldMap) {
     }
   } catch (error) {
     console.error('Error while annotating form elements', error);
+    // eslint-disable-next-line no-alert
     window.alert('Error while annotating form elements');
   }
 }

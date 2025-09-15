@@ -51,7 +51,7 @@ onmessage = async (e) => {
   async function handleMessageEvent(event) {
     switch (event.data.name) {
       case 'init': {
-        const { search, ...formDef } = event.data.payload;
+        const { _search, ...formDef } = event.data.payload;
         initPayload = event.data.payload;
         ruleEngine = new RuleEngine(formDef);
         const state = ruleEngine.getState();

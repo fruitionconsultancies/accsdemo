@@ -41,6 +41,7 @@ export default async function registerCustomFunctions() {
     registerFunctionsInRuntime(ootbFunctionModule);
     registerFunctionsInRuntime(customFunctionModule);
   } catch (e) {
-    console.log(`error occured while registering custom functions in web worker ${e.message}`);
+    // eslint-disable-next-line no-console
+    console.error(`error occured while registering custom functions in web worker ${e.message}`);
   }
 }
